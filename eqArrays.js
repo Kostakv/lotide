@@ -12,8 +12,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//Function that takes in two arrays and checks if it's equal to eachother
 const eqArrays = function (firstArray, secondArray){
-  var pass = new Boolean(false)
+  var pass = new Boolean(false) // variable changes from false to true depending on outcome
   for (var i = 0; i < firstArray.length; i++){
     if (firstArray[i]===secondArray[i]){
       pass = true
@@ -25,3 +26,6 @@ const eqArrays = function (firstArray, secondArray){
   return pass
   
 }
+
+console.log(assertEqual(eqArrays([1, 2, 6], [1, 2, 3]), true)); // => should PASS
+
