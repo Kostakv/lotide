@@ -8,12 +8,14 @@ const eqArrays = function (firstArray, secondArray){
       pass = false
     }
   }
+  console.log(pass)
   return pass
   
 }
 
 const assertArrayEqual = function (firstArray, secondArray){
-  var check = eqArrays(firstArray,secondArray)
+  var check = new Boolean(false)
+  check = eqArrays(firstArray,secondArray)
   if (check == true){
     console.log(`✅✅✅ Assertion Passed: ${firstArray} === ${secondArray}`)
   }
@@ -23,3 +25,4 @@ const assertArrayEqual = function (firstArray, secondArray){
   
 
 }
+assertArrayEqual([50,50,50,50],[50,45,50,50])
