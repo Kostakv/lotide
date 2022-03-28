@@ -41,5 +41,5 @@ console.log(words)
 without(words, ["lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 console.log(words)
-assertArrayEqual(words, ["hello", "world", "lighhouse"]);
+assertArrayEqual(words, ["hello", "world", "lighthouse"]);
 
