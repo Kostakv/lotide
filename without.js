@@ -1,45 +1,58 @@
+//Function that takes in two arrays and checks if it's equal to eachother
 const eqArrays = function (firstArray, secondArray){
-  var pass = new Boolean(false)
+  var pass = 0 // Variable to determine if it's true or false
   for (var i = 0; i < firstArray.length; i++){
-    if (firstArray[i]===secondArray[i]){
-      pass = true
+    if (firstArray[i] !== secondArray[i]){
+      pass = 1
     }
-    else {
-      pass = false
-    }
-  }
-  return pass
   
-}
+  }
 
-const assertArrayEqual = function (firstArray, secondArray){
-  var check = eqArrays(firstArray,secondArray)
-  if (check == true){
-    console.log(`✅✅✅ Assertion Passed: ${firstArray} === ${secondArray}`)
+  // If/else statment for result
+  if (pass === 1){
+    return false
   }
   else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${firstArray} !== ${secondArray}`)
+    return true
   }
-  
-
 }
 
+const assertArrayEqual = function (arrayOne, arrayTwo){
+  //If statement that gets the returned value from eqArrays
+  if (eqArrays(arrayOne,arrayTwo)){
+    return `✅✅✅ Assertion Passed: ${arrayOne} === ${arrayTwo}` 
+  }
+
+  //Else statment if it's !==
+  else {
+    return `🛑🛑🛑 Assertion Failed: ${arrayOne} !== ${arrayTwo}`
+  }
+  
+}
+
+//Function without that takes in 2 arrays
 const without = function (source, itemsToRemove){
-  var newArray = source
+  var newArray = [] // New array to not modify the original
+
+  //For loop to push elements into new array
   for (var i = 0; i < source.length; i++){
-    for (var j = 0; j < itemsToRemove.length; j++){
-      if (source[i]===itemsToRemove[j]){
-        newArray.splice(i,1)
+    newArray.push(source[i])
+  }
+  
+  //Nested forloop to itterate each item of newArray with the itemsToRemove
+  for (var i = 0; i < newArray.length; i++){ // i is the iteration of newArray
+    for (var j = 0; j < itemsToRemove.length; j++){ //j is the iteration of itemsToRemove
+      if (newArray[i] === itemsToRemove[j]){
+        newArray.splice(i,1) // removes items that are === to items to remove
       }
     }
   }
   return newArray
+  
 }
 
-const words = ["hello", "world", "lighthouse"];
-console.log(words)
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-console.log(words)
-assertArrayEqual(words, ["hello", "world", "lighthouse"]);
+
+
+
+
 
