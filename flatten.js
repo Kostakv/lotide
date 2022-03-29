@@ -30,4 +30,25 @@ const assertArrayEqual = function (arrayOne, arrayTwo){
   
 
 }
-console.log(assertArrayEqual([50,50,50,50],[50,50,50,50]))
+
+
+
+//Function that flatten's any given array
+const flatten = function (array){
+  newArray = [] // Empty array to not modify original array
+
+  for (var i = 0; i < array.length; i++){ //First loop with a length of entire array
+    if (Array.isArray(array[i])){ // checks if array is present given current index value
+      for (var j = 0; j < array[i].length; j++){ //Nested loop with a length of nested array 
+        newArray.push(array[i][j]) // Pushes elements to newArray
+      }
+    }
+    else {
+      newArray.push(array[i]) // If no array found, add element to newArray
+    }
+  }
+  return newArray
+}
+
+console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
+console.log(flatten([1, 2, [3,17 ,45,67,78, 4], 5, [6,7,8]])) 

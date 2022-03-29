@@ -14,18 +14,25 @@ const assertEqual = function(actual, expected) {
 
 //Function that takes in two arrays and checks if it's equal to eachother
 const eqArrays = function (firstArray, secondArray){
-  var pass = new Boolean(false) // variable changes from false to true depending on outcome
+  var pass = 0 // Variable to determine if it's true or false
   for (var i = 0; i < firstArray.length; i++){
-    if (firstArray[i]===secondArray[i]){
-      pass = true
+    if (firstArray[i] !== secondArray[i]){
+      pass = 1
     }
-    else {
-      pass = false
-    }
-  }
-  return pass
   
+  }
+
+  // If/else statment for result
+  if (pass === 1){
+    return false
+  }
+  else {
+    return true
+  }
 }
 
-console.log(assertEqual(eqArrays([1, 2, 6], [1, 2, 3]), true)); // => should PASS
+eqArrays([1, 2, 3], [1, 2, 3]) // => true
+eqArrays([1, 2, 3], [3, 2, 1]) // => false
 
+eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
+eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => false
