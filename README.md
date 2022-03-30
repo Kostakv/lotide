@@ -14,3 +14,4 @@ Lotide is a Javascript library containing many functions
 * tail - returns the tail of an array (Excluding the head of the array)
 * middle - returns the middle element of an array
 * without - takes two arugments, removes certain elements of an array *but keeps original the same*
+* countOnly - takes two arguments (array and object) counts only specific keys in an object, returns new object
