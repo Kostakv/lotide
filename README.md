@@ -17,3 +17,4 @@ Lotide is a Javascript library containing many functions
 * countOnly - takes two arguments (array and object) counts only specific keys in an object, returns new object
 * countLetters - takes one arugment 'String' and returns an object containing the number of identical letters
 * letterPositions - takes one argument 'String' and returns object showing the positions of each letter in string passed
+* findKeyByValue - takes two arguments, object and value, returns the key of an object that matches the value passed
