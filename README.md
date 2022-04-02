@@ -19,3 +19,4 @@ Lotide is a Javascript library containing many functions
 * letterPositions - takes one argument 'String' and returns object showing the positions of each letter in string passed
 * findKeyByValue - takes two arguments, object and value, returns the key of an object that matches the value passed
 * eqObjects.js - takes two arguments, object and object, returns if they are equal or not **INDEVELOPMENT**
+* assertObjectsEqual - takes two objects and prints an assertion message 
