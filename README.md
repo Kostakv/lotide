@@ -20,3 +20,5 @@ Lotide is a Javascript library containing many functions
 * findKeyByValue - takes two arguments, object and value, returns the key of an object that matches the value passed
 * eqObjects.js - takes two arguments, object and object, returns if they are equal or not **INDEVELOPMENT**
 * assertObjectsEqual - takes two objects and prints an assertion message 
+* map.js takes two arguments an array and a callback function, to return a new array of that has been mapped
+* takeUntil.js takes two arguments, an array and a callback function to return a new array of elements containing only elements up to a certain point
