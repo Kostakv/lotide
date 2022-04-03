@@ -22,3 +22,4 @@ Lotide is a Javascript library containing many functions
 * assertObjectsEqual - takes two objects and prints an assertion message 
 * map.js takes two arguments an array and a callback function, to return a new array of that has been mapped
 * takeUntil.js takes two arguments, an array and a callback function to return a new array of elements containing only elements up to a certain point
+* findKey.js takes two arguments, an object and a callback function returns key using callback function
