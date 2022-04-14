@@ -1,36 +1,3 @@
-const eqArrays = function (firstArray, secondArray){
-  var pass = 0 // Variable to determine if it's true or false
-  for (var i = 0; i < firstArray.length; i++){
-    if (firstArray[i] !== secondArray[i]){
-      pass = 1
-    }
-  
-  }
-
-  // If/else statment for result
-  if (pass === 1){
-    return false
-  }
-  else {
-    return true
-  }
-}
-
-const assertArrayEqual = function (arrayOne, arrayTwo){
-  //If statement that gets the returned value from eqArrays
-  if (eqArrays(arrayOne,arrayTwo)){
-    return `✅✅✅ Assertion Passed: ${arrayOne} === ${arrayTwo}` 
-  }
-
-  //Else statment if it's !==
-  else {
-    return `🛑🛑🛑 Assertion Failed: ${arrayOne} !== ${arrayTwo}`
-  }
-  
-
-}
-
-
 const middle = function (array){ // function 1 argument for array
   newArray = [] // declaration of new array
   var middle = (array.length - 1)/2 // finds the middle index value
@@ -54,10 +21,4 @@ const middle = function (array){ // function 1 argument for array
   }
 
 }
-console.log(middle([1])) // => [])
-console.log(middle([1, 2])) // => []
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3])
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
-
+module.exports = middle;

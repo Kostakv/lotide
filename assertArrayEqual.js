@@ -1,5 +1,4 @@
 const eqArrays = require('./eqArrays');
-const assertEqual = require('./eqArrays');
 
 const assertArrayEqual = function (arrayOne, arrayTwo){
   //If statement that gets the returned value from eqArrays

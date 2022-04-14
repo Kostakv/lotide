@@ -1,2 +1,1 @@
-const assertEqual = require('../tail');
-const assertEqual = require('./assertEqual');
+const tail = require('../tail');
