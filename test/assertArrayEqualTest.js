@@ -1,0 +1,2 @@
+const assertEqual = require('../assertArrayEqual');
+
