@@ -1,5 +1,5 @@
 const takeUntil = function(array, callback) { // Higher order function
-  var newArray = [] // new array to return
+  var newArray = [] // new array to return 
   for (const i of array) {
     if (!callback(i)){ // Sends value to callback and checks for true or false
       newArray.push(i) // add element to array if callback is false
@@ -41,6 +41,7 @@ const assertArrayEqual = function (arrayOne, arrayTwo){
   
 
 }
+
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);// Call back function returns true or false
