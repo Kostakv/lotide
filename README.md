@@ -1,8 +1,31 @@
-# MY LOTIDE PROJECT
+# Lotide
 
-## Description
+A mini clone of the [Lodash](https://lodash.com) library.
 
-Lotide is a Javascript library containing many functions
+## Purpose
+
+**_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
+
+This project was created and published by me as part of my learnings at Lighthouse Labs. 
+
+## Usage
+
+**Install it:**
+
+`npm install @kostakv/lotide`
+
+**Require it:**
+
+`const _ = require('@kostakv/lotide');`
+
+**Call it:**
+
+`const results = _.tail([1, 2, 3]) // => [2, 3]`
+
+## Documentation
+
+The following functions are currently implemented:
+
 
 ### FUNCTIONS
 
@@ -23,3 +46,12 @@ Lotide is a Javascript library containing many functions
 * map.js takes two arguments an array and a callback function, to return a new array of that has been mapped
 * takeUntil.js takes two arguments, an array and a callback function to return a new array of elements containing only elements up to a certain point
 * findKey.js takes two arguments, an object and a callback function returns key using callback function
+
+### Test Folder lotide/test
+
+* assertArrayEqualTest.js
+* assertEqualTest.js
+* eqArrays.js
+* headTest.js
+* middleTest.js
+* tailTest.js

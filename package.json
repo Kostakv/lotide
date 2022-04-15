@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@kostakv/lotide",
   "version": "1.0.0",
-  "description": "Kosta's Lotide Project",
-  "main": "assertArrayEqual.js",
+  "description": "kostakv lotide project",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
