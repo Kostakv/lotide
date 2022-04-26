@@ -31,3 +31,5 @@ result = findKey({
 
 console.log(assertEqual(result,'noma'))
 
+module.exports = findKey;
+

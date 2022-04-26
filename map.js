@@ -43,3 +43,5 @@ const eqArrays = function (firstArray, secondArray){
   }
   return false
 }
+
+module.exports = map;

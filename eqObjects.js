@@ -58,6 +58,8 @@ const test1 = {a: 10, b: 20, c: [24, "17", "Hello"]}
 const test2 = {c: [24, "17", "Hello"], b: 20, a: 10}
 console.log(eqObjects(test1,test2))// => false
 
+module.exports = eqObjects;
+
 
 
 
